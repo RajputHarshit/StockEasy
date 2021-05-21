@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Stock Easy</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap-social.css">
   <link rel="icon" href="image/stock.png">
   <!-- font awesome link -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -40,6 +41,9 @@
           <li class="nav-item">
             <a class="nav-link" href="content.html">About Us</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:3000/">Sign UP</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -47,7 +51,55 @@
     <div class="main-heading">
       <h1 class="home-heading">Stock Easy</h1>
       <p class="home-para">The place where all searches <br>END.</p>
-      <button class="btn" name="button"><i class="fas fa-door-open"></i>Welcome</button>
+      <button class="btnn" id="button"><i class="fas fa-door-open"></i>Welcome</button>
+    </div>
+
+
+    <!-- pop up modal -->
+    <div class="bg-modal">
+      <div class="modal-contents">
+
+        <div class="close">+</div>
+        <h1 class="signHeading ">Sign UP</h1>
+        <p class="signHeading">It's Easy and Free</p>
+        <hr>
+
+        <form action="">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="First Name">
+            <input type="text" class="form-control" placeholder="Last Name">
+          </div>
+          <input type="email" class="form-control" name="" placeholder="Email Address">
+          <input type="password" class="form-control" name="" placeholder="New Password">
+          <div class="form-floating">
+            <input type="date" class="form-control" id="floatingInputGrid" >
+            <label for="floatingInputGrid">Date of Birth</label>
+          </div>
+
+          <div class="form-floating">
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <option selected>Choose</option>
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+              <option value="3">Other</option>
+            </select>
+            <label for="floatingSelect">Select the Gender</label>
+
+          </div>
+
+
+          <button type="button" class="btn btn-primary  but" type="submit">Sign Up</button>
+
+                <div class="card-body">
+                  <a class="btn btn-block btn-social btn-google g-but" href="/auth/google" role="button">
+                    <i class="fab fa-google"></i>
+                    Sign Up with Google
+                  </a>
+                </div>
+
+        </form>
+
+      </div>
     </div>
   </section>
 
@@ -59,12 +111,12 @@
       </div>
       <div class="col-lg-6">
         <h1 class="heading">The One and Only DESTINATION for NEWBIE investors.</h1>
-        <button class="btn btn-primary btn-lg"><a href="https://chat.whatsapp.com/FO9glpvFJUx3Y9u5tPyavx">JOIN US</a></button>
+        <button class="btnn btn-primary btn-lg"><a href="https://chat.whatsapp.com/FO9glpvFJUx3Y9u5tPyavx">JOIN US</a></button>
 
       </div>
     </div>
   </div>
-</section>
+  </section>
   <section id="qualities">
 
     <div class="row">
@@ -91,58 +143,58 @@
   </section>
   <section id="pricing">
 
-  <h2>A Plan for Every Newbies.</h2>
-  <p>Simple and affordable price plans for you.</p>
-   <div class="row">
-     <div class="pricing-column col-lg-6 ">
-       <div class="card">
-         <div class="card-header">
-         <h3>Traders</h3>
-         </div>
-         <div class="card-body">
-           <h2>Free</h2>
-           <p>2 Stocks per Sunday</p>
-           <p>Session on 3P policy</p>
-           <p>Traning on choosing Stocks</p>
-           <button class="button btn-outline-dark  btn-block" type="button">Sign Up</button>
-         </div>
-     </div>
+    <h2>A Plan for Every Newbies.</h2>
+    <p>Simple and affordable price plans for you.</p>
+    <div class="row">
+      <div class="pricing-column col-lg-6 ">
+        <div class="card">
+          <div class="card-header">
+            <h3>Traders</h3>
+          </div>
+          <div class="card-body">
+            <h2>Free</h2>
+            <p>2 Stocks per Sunday</p>
+            <p>Session on 3P policy</p>
+            <p>Traning on choosing Stocks</p>
+            <button class="button btn-outline-dark  btn-block" type="button">Sign Up</button>
+          </div>
+        </div>
 
 
 
-     </div>
-     <div class=" pricing-column col-lg-6">
-       <div class="card">
-         <div class="card-header">
-           <h3>Investor</h3>
-         </div>
-         <div class="card-body">
-           <h2>500rs/mo</h2>
-           <p>5 stocks per Sunday</p>
-           <p>Learning on Technicals</p>
-           <p>Live session by Dharmendra Singh</p>
-           <button class="button btn-block btn-dark" type="button">Sign Up</button>
-         </div>
-     </div>
+      </div>
+      <div class=" pricing-column col-lg-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Investor</h3>
+          </div>
+          <div class="card-body">
+            <h2>500rs/mo</h2>
+            <p>5 stocks per Sunday</p>
+            <p>Learning on Technicals</p>
+            <p>Live session by Dharmendra Singh</p>
+            <button class="button btn-block btn-dark" type="button">Sign Up</button>
+          </div>
+        </div>
 
 
-     </div>
+      </div>
 
-     </div>
-     </div>
+    </div>
+    </div>
 
 
-</section>
+  </section>
 
 
   <div class="bottom-container">
-        <a class="footer-link" href="#">LinkedIn</a>
+    <a class="footer-link" href="#">LinkedIn</a>
     <a class="footer-link" href="#">Facebook</a>
     <a class="footer-link" href="#">Twitter</a>
     <p class="copyright">© 2020 Stock Easy.</p>
 
-      </div>
-
+  </div>
+  <script src="index.js" charset="utf-8"></script>
 </body>
 
 </html>
